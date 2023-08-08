@@ -31,6 +31,7 @@ export const Container = styled.div`
 
 `;
 export const Content = styled.div`
+  
   width: 360px;
   height: 100vh;
   display: flex;
@@ -55,7 +56,7 @@ export const BigTitle = styled.label<Props>`
 `;
 export const Title = styled.label<Props>`
   font-size: 18px;
-  font-family: bold;
+  font-family: 'bold';
   font-weight : bold;
 
   background-color: transparent;

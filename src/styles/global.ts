@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import '@fontsource-variabl/league-spartan';
+import'@fontsource/league-spartan';
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;

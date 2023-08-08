@@ -18,8 +18,9 @@ export default function Home() {
 };
   return ( 
   <Container>
+    
     <Content>
-      <BackGround src={'/backGround.svg'} width={1000} height={2000}/>
+     <BackGround src={'/backGround.svg'} width={1000} height={2000}></BackGround>
       <ChangeBudgetStatusModal
         open={modalShow}
         close={() => setModalShow(false)}

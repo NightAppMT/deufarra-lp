@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import Theme from "@/styles/themes";
 import React from "react";
 import {Helmet} from "react-helmet";
+import'@fontsource/league-spartan';
 
 function MyApp({ Component, pageProps }: any) {
   useEffect(() => {

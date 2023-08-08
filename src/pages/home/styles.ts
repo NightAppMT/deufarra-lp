@@ -28,7 +28,6 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
 `;
 export const Content = styled.div`
   
@@ -61,7 +60,7 @@ export const Title = styled.label<Props>`
 
   background-color: transparent;
   color: ${(props) => (props.color ? props.color : "#fff")};
-  margin-left: ${(props) => (props.marginLeft ? props.marginLeft : '0px')};
+  margin-left: ${(props) => (props.marginLeft ? props.marginLeft : '6px')};
   margin-top: ${(props) => (props.marginTop ? props.marginTop : '0px')};
 
 
@@ -72,7 +71,7 @@ export const SubTitle = styled.li<Props>`
   font-weight : bold;
   background-color: transparent;
   color: ${(props) => (props.color ? props.color : "#fff")};
-  margin-left: ${(props) => (props.marginLeft ? props.marginLeft : '0px')};
+  margin-left: ${(props) => (props.marginLeft ? props.marginLeft : '6px')};
   margin-top: ${(props) => (props.marginTop ? props.marginTop : '0px')};  
 
 `;
@@ -109,9 +108,10 @@ export const SquareStyle = styled.div`
   width: 50px;
   background-color: #C759EC;
   margin-bottom: 10px;
+  margin-left: 6px;
 `;
 export const BackGround = styled(Image)`
-  width: 360px;
+  width: 370px;
   height: 100vh;
   display: flex;
   flex-direction: column;

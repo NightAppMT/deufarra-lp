@@ -65,7 +65,7 @@ export const FormHeader= styled.div`
 `;
 
 export const FinishButton = styled.button`
-margin-top: 30px;
+margin-top: 10px;
 align-self: center;
 background-color: #00FF01;
 width: 260px;

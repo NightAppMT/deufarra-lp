@@ -21,11 +21,13 @@ interface Props {
   justifyContent?: string;
 }
 export const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   background-color: #140324;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
 `;
 export const Content = styled.div`
@@ -33,8 +35,8 @@ export const Content = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #140324;
   align-self: center;
+  z-index: 1;
 `;
 
 export const BigTitle = styled.label<Props>`
@@ -106,12 +108,14 @@ export const SquareStyle = styled.div`
   width: 50px;
   background-color: #C759EC;
   margin-bottom: 10px;
-
 `;
 export const BackGround = styled(Image)`
-  width: 100vw;
+  width: 360px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #140324;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
 `;

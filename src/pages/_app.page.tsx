@@ -16,8 +16,8 @@ function MyApp({ Component, pageProps }: any) {
     <>
        <Helmet>
         <meta charSet="utf-8" />
-        <title>Inscriçoes - Deu-Farra</title>
-        <link rel="canonical" href="https://listadeespera.juridia.com.br" />
+        <title>Inscrições - Deu Farra Universitária</title>
+        <link rel="canonical" href="" />  
       </Helmet>
       <ThemeProvider theme={Theme}>
         <GlobalStyle />

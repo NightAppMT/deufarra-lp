@@ -53,8 +53,9 @@ export default function ChangeBudgetStatusModal({
         if (error.code === "auth/email-already-in-use") {
           window.alert("O e-mail inserido já está em uso ou é inválido.");
         } else {
-          // Outros erros podem ser tratados aqui, se necessário.
+          window.alert("O correu um erro desconhecido, tente novamente mais tarde.");
           console.log("Erro desconhecido:", error);
+          close();
         }
       }
     };
@@ -133,7 +134,7 @@ const handleButtonClick = () => {
         </FormInput>
         </Form>
         <FormInput >
-        <Title>Seu Time De Futbol: <Observation>(Insira Todos os Nomes separando por virgulas)</Observation></Title>
+        <Title>Seu Time De Futbol: <Observation>Insira Todos os Nomes separando por virgulas (7 a 11 participantes)</Observation></Title>
         <InputLarge onChange={(e) => setTimeDeFut(e.target.value)}/>
         </FormInput>
         <Form>
@@ -146,7 +147,7 @@ const handleButtonClick = () => {
         <Input onChange={(e) => setDuplaMasculina2(e.target.value)}/>
         </FormInput>
         </Form>
-        <Observation >inserir os nomes das duplas aqui separando por virgulas.</Observation>
+        <Observation >inserir os nomes das duplas aqui separando por virgulas, somente se for participar da modalidade vólei de areia masculina.</Observation>
         <Form>
         <FormInput>
         <Title>Dupla 1 (Feminino)</Title>
@@ -157,8 +158,8 @@ const handleButtonClick = () => {
         <Input onChange={(e) => setDuplaFeminina2(e.target.value)}/>
         </FormInput>
         </Form>
-        <Observation >inserir os nomes das duplas aqui separando por virgulas.</Observation>
-        <Title size={10} color="red">{isFieldsValid ? "" : "Preencha os campos que tiverem *  corretamente"}</Title>
+        <Observation >inserir os nomes das duplas aqui separando por virgulas , somente se for participar da modalidade vólei de areia feminina.</Observation>
+        <Title size={10} color="red" marginTop='10px'>{isFieldsValid ? "" : "Preencha os campos que tiverem * corretamente"}</Title>
             <FinishButton onClick={handleButtonClick}> Me Cadastrar</FinishButton>
             
 

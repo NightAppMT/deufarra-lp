@@ -19,7 +19,7 @@ export default function Home() {
   return ( 
   <Container>
     <Content>
-      {/* <BackGround src={'/backGround.svg'}> */}
+      <BackGround src={'/backGround.svg'} width={1000} height={2000}/>
       <ChangeBudgetStatusModal
         open={modalShow}
         close={() => setModalShow(false)}
@@ -52,7 +52,7 @@ export default function Home() {
         3º lugar R$800,00
       </SubTitle>
       <Button onClick={handleButtonClick}>Me Cadastrar</Button>
-      {/* </BackGround> */}
+     
       </Content>
   </Container>
   );

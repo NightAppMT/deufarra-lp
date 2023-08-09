@@ -123,3 +123,12 @@ export const FormTextStyle = styled.div`
   flex-direction: column;
   background-color: transparent;
 `;
+export const CloseButton = styled.button`
+  width: 20px;
+  height: 20px;
+  background-color: #C759EC;
+  font-family: 'league spartan';
+  font-size: 10px;
+  border-radius: 5px;
+  color: #fff;
+`;

@@ -1,6 +1,6 @@
 
 import { useRef, useState } from "react";
-import {  Container, Content, FinishButton, Form, FormHeader, FormImages , FormInput, FormTextStyle, Input,  InputLarge,  LogoImg,  Observation,  SquareStyle,  Title } from "./styles";
+import {  CloseButton, Container, Content, FinishButton, Form, FormHeader, FormImages , FormInput, FormTextStyle, Input,  InputLarge,  LogoImg,  Observation,  SquareStyle,  Title } from "./styles";
 import {  firebaseAuth, firebaseApp} from "../../../utils/firebase-config";
 import { getFirestore , addDoc , collection } from 'firebase/firestore'
 import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -44,7 +44,7 @@ export default function ChangeBudgetStatusModal({
             duplaMasculina1,
             duplaMasculina2,
             duplaFeminina1,
-            // duplaFeminina2,
+            duplaFeminina2,
         });
         window.alert("Você realizou sua inscrição!");
         close(); // Fechar o modal após a inscrição bem-sucedida.
@@ -86,10 +86,10 @@ const handleButtonClick = () => {
       ["Seu Telefone", telefone],
       ["Seu Email", email],
       ["Seu Time De Futebol", timeDeFut],
-      ["Dupla 1 (Masculino)", duplaMasculina1],
-      ["Dupla 2 (Masculino)", duplaMasculina2],
-      ["Dupla 1 (Feminino)", duplaFeminina1],
-      // ["Dupla 2 (Feminino)", duplaFeminina2],
+      ["Nome 1 (Masculino)", duplaMasculina1],
+      ["Nome 2 (Masculino)", duplaMasculina2],
+      ["Nome 1 (Feminino)", duplaFeminina1],
+      ["Nome 2 (Feminino)", duplaFeminina2],
     ];
 
     const confirmationMessage = dados
@@ -106,9 +106,10 @@ const handleButtonClick = () => {
   return (
     <Container show={open} onHide={close} size='sm' >
       <Content>
+        <CloseButton> x </CloseButton>
         <FormHeader>
         <FormTextStyle>
-        <Title>INSCRIÇÃO AQUI:</Title>
+        <Title>INSCRIÇÕES AQUI:</Title>
         <SquareStyle/>
         </FormTextStyle>
         <LogoImg src={'/logoNightImg.svg'}/>
@@ -134,31 +135,31 @@ const handleButtonClick = () => {
         </FormInput>
         </Form>
         <FormInput >
-        <Title>Seu Time De Futbol: <Observation>Insira Todos os Nomes separando por virgulas (7 a 11 participantes)</Observation></Title>
+        <Title>Seu Time De Futebol: <Observation>Insira Todos os Nomes separando por virgulas (7 a 11 participantes)</Observation></Title>
         <InputLarge onChange={(e) => setTimeDeFut(e.target.value)}/>
         </FormInput>
         <Form>
         <FormInput>
-        <Title>Dupla 1 (Masculino)</Title>
+        <Title>Nome 1 (Masculino)</Title>
         <Input onChange={(e) => setDuplaMasculina1(e.target.value)}/>
         </FormInput>
         <FormInput>
-        <Title>Dupla 2 (Masculino)</Title>
+        <Title>Nome 2 (Masculino)</Title>
         <Input onChange={(e) => setDuplaMasculina2(e.target.value)}/>
         </FormInput>
         </Form>
-        <Observation >inserir os nomes das duplas aqui separando por virgulas, somente se for participar da modalidade vólei de areia masculina.</Observation>
+        <Observation >Campeonato de Vôlei de Areia Masculino</Observation>
         <Form>
         <FormInput>
-        <Title>Dupla (Feminino)</Title>
+        <Title>Nome 1 (Feminino)</Title>
         <Input onChange={(e) => setDuplaFeminina1(e.target.value)}/>
         </FormInput>
-        {/* <FormInput>
-        <Title>Dupla 2 (Feminino)</Title>
+        <FormInput>
+        <Title>Nome 2 (Feminino)</Title>
         <Input onChange={(e) => setDuplaFeminina2(e.target.value)}/>
-        </FormInput> */}
+        </FormInput>
         </Form>
-        <Observation >inserir os nomes das duplas aqui separando por virgulas , somente se for participar da modalidade vólei de areia feminina.</Observation>
+        <Observation >Campeonato de Vôlei de Areia Feminino.</Observation>
         <Title size={10} color="red" marginTop='10px'>{isFieldsValid ? "" : "Preencha os campos que tiverem * corretamente"}</Title>
             <FinishButton onClick={handleButtonClick}> Me Cadastrar</FinishButton>
             

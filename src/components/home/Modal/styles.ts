@@ -43,7 +43,7 @@ export const Title = styled.label<Props>`
 
 color: ${(props) => (props.color ? props.color : "#000")};
 font-size: ${(props) => (props.size ? props.size : 14)}px;
-font-family: BOLD;
+font-family: 'League Spartan', sans-serif;
 font-weight: bold;
 margin-left: ${(props) => (props.marginLeft ? props.marginLeft : '0px')};
 margin-top: ${(props) => (props.marginTop ? props.marginTop : '0px')};
@@ -51,8 +51,8 @@ background-color: transparent;
 `;
 export const Observation = styled.label<Props>`
 color: ${(props) => (props.color ? props.color : "#000")};
-font-size: 10px;
-font-family: BOLD;
+font-size: 9px;
+font-family: 'league spartan';
 background-color: transparent;
 
 `;
@@ -73,7 +73,7 @@ height: 55px;
 border-radius: 15px;
 color: #150029 ;
 font-size: 20px ;
-font-family: bold;
+font-family: 'league spartan';
 font-weight: bold;
 `
 export const FormText = styled.div`

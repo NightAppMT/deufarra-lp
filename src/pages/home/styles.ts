@@ -3,7 +3,7 @@ import Theme from "@/styles/themes";
 import { Image } from "react-bootstrap";
 import px2vw from "@/utils/size";
 
-
+import'@fontsource/league-spartan';
 
 
 interface ContainerProps {
@@ -55,7 +55,7 @@ export const BigTitle = styled.label<Props>`
 `;
 export const Title = styled.label<Props>`
   font-size: 18px;
-  font-family: 'bold';
+  font-family: 'League spartan';
   font-weight : bold;
 
   background-color: transparent;
@@ -67,7 +67,7 @@ export const Title = styled.label<Props>`
 `;
 export const SubTitle = styled.li<Props>`
   font-size: 16px;
-  font-family: bold;
+  font-family: 'league spartan';
   font-weight : bold;
   background-color: transparent;
   color: ${(props) => (props.color ? props.color : "#fff")};
@@ -98,7 +98,7 @@ export const Button = styled.button`
   border-radius: 20px;
   color:#fff;
   font-size: 18px;
-  font-family: bold;
+  font-family: 'league spartan';
   align-self: center;
   margin-top: 30px;
   

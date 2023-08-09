@@ -44,7 +44,7 @@ export default function ChangeBudgetStatusModal({
             duplaMasculina1,
             duplaMasculina2,
             duplaFeminina1,
-            duplaFeminina2,
+            // duplaFeminina2,
         });
         window.alert("Você realizou sua inscrição!");
         close(); // Fechar o modal após a inscrição bem-sucedida.
@@ -89,7 +89,7 @@ const handleButtonClick = () => {
       ["Dupla 1 (Masculino)", duplaMasculina1],
       ["Dupla 2 (Masculino)", duplaMasculina2],
       ["Dupla 1 (Feminino)", duplaFeminina1],
-      ["Dupla 2 (Feminino)", duplaFeminina2],
+      // ["Dupla 2 (Feminino)", duplaFeminina2],
     ];
 
     const confirmationMessage = dados
@@ -150,13 +150,13 @@ const handleButtonClick = () => {
         <Observation >inserir os nomes das duplas aqui separando por virgulas, somente se for participar da modalidade vólei de areia masculina.</Observation>
         <Form>
         <FormInput>
-        <Title>Dupla 1 (Feminino)</Title>
+        <Title>Dupla (Feminino)</Title>
         <Input onChange={(e) => setDuplaFeminina1(e.target.value)}/>
         </FormInput>
-        <FormInput>
+        {/* <FormInput>
         <Title>Dupla 2 (Feminino)</Title>
         <Input onChange={(e) => setDuplaFeminina2(e.target.value)}/>
-        </FormInput>
+        </FormInput> */}
         </Form>
         <Observation >inserir os nomes das duplas aqui separando por virgulas , somente se for participar da modalidade vólei de areia feminina.</Observation>
         <Title size={10} color="red" marginTop='10px'>{isFieldsValid ? "" : "Preencha os campos que tiverem * corretamente"}</Title>

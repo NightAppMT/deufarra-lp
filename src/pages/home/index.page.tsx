@@ -39,7 +39,7 @@ export default function Home() {
         Campeonato de vôlei de areia masculino<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (min. 1 dupla e max. 2)
       </SubTitle>
       <SubTitle >
-        Campeonato de vôlei de areia Feminino<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(min. 1 dupla e max 2)
+        Campeonato de vôlei de areia Feminino<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1 dupla)
       </SubTitle>
       <Title marginTop="20px">PREMIAÇÃO</Title>
       <SquareStyle/>

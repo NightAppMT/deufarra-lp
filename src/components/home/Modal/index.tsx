@@ -106,7 +106,7 @@ const handleButtonClick = () => {
   return (
     <Container show={open} onHide={close} size='sm' >
       <Content>
-        <CloseButton> x </CloseButton>
+        <CloseButton onClick={close}> x </CloseButton>
         <FormHeader>
         <FormTextStyle>
         <Title>INSCRIÇÕES AQUI:</Title>

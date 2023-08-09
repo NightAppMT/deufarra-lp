@@ -36,7 +36,7 @@ export default function Home() {
         Campeonato de futebol 7 masculino <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(min. 7 inscritos e max. 11)
       </SubTitle>
       <SubTitle >
-        Campeonato de vôlei de areia masculino<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1 dupla)
+        Campeonato de vôlei de areia masculino<br/>&nbsp;&nbsp;&nbsp;&nbsp; (1 dupla)
       </SubTitle>
       <SubTitle >
         Campeonato de vôlei de areia Feminino<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1 dupla)

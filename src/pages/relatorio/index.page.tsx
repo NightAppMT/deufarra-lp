@@ -116,7 +116,7 @@ export default function Relatorio() {
   };
   return (
     <Container>
-      {senha !== "Executivos" ? (
+      {senha !== "e0102" ? (
         <Input
           placeholder="Digite a senha aqui"
           value={senha}
@@ -156,31 +156,33 @@ export default function Relatorio() {
             {userData.map((user: any, index: any) => (
               <ItemDiv key={index}>
                 <Item>
-                  <Text>{user.name}</Text>
+                  <Text readOnly readOnly>
+                    {user.name}
+                  </Text>
                 </Item>
                 <Item>
-                  <Text>{user.email}</Text>
+                  <Text readOnly>{user.email}</Text>
                 </Item>
                 <Item>
-                  <Text>{user.telefone}</Text>
+                  <Text readOnly>{user.telefone}</Text>
                 </Item>
                 <Item>
-                  <Text>{user.atletica}</Text>
+                  <Text readOnly>{user.atletica}</Text>
                 </Item>
                 <Item>
-                  <Text>{user.duplaFeminina1}</Text>
+                  <Text readOnly>{user.duplaFeminina1}</Text>
                 </Item>
                 <Item>
-                  <Text>{user.duplaFeminina2}</Text>
+                  <Text readOnly>{user.duplaFeminina2}</Text>
                 </Item>
                 <Item>
-                  <Text>{user.duplaMasculina1}</Text>
+                  <Text readOnly>{user.duplaMasculina1}</Text>
                 </Item>
                 <Item>
-                  <Text>{user.duplaMasculina2}</Text>
+                  <Text readOnly>{user.duplaMasculina2}</Text>
                 </Item>
                 <Item>
-                  <Text>{user.timeDeFut}</Text>
+                  <Text readOnly>{user.timeDeFut}</Text>
                 </Item>
               </ItemDiv>
             ))}

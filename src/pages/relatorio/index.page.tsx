@@ -156,9 +156,7 @@ export default function Relatorio() {
             {userData.map((user: any, index: any) => (
               <ItemDiv key={index}>
                 <Item>
-                  <Text readOnly readOnly>
-                    {user.name}
-                  </Text>
+                  <Text readOnly>{user.name}</Text>
                 </Item>
                 <Item>
                   <Text readOnly>{user.email}</Text>

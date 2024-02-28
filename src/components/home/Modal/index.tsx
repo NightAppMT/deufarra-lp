@@ -153,6 +153,9 @@ export default function ChangeBudgetStatusModal({ open, close }: ModalProps) {
             <Input onChange={(e) => setEmail(e.target.value)} />
           </FormInput>
         </Form>
+        <Title>
+          Insira os nomes Somente nas categorias que deseja participar
+        </Title>
         <FormInput>
           <Title>
             Seu Time De Futebol:{" "}
